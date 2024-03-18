@@ -1,0 +1,48 @@
+.page-head {
+  position: sticky;
+  top: 0;
+  flex-shrink: 0;
+  z-index: 50;
+  background: #fff;
+  transition: backgound-color 0.5s, box-shadow 0.3s, transform 0.3s;
+  html.ios & {
+    @include ios-top(padding-top);
+  }
+  > div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 5.2rem;
+    transition: 0.3s;
+    overflow: hidden;
+  }
+
+  .btn-back {
+    width: 5.2rem;
+    height: 5.2rem;
+    background-image: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0 8 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8 4.00012C8 4.27626 7.77614 4.50012 7.5 4.50012H1.70711L3.85355 6.64657C4.04882 6.84183 4.04882 7.15841 3.85355 7.35368C3.65829 7.54894 3.34171 7.54894 3.14645 7.35368L0.146446 4.35368C-0.0488157 4.15841 -0.0488157 3.84183 0.146446 3.64657L3.14645 0.646569C3.34171 0.451307 3.65829 0.451307 3.85355 0.646569C4.04882 0.841831 4.04882 1.15841 3.85355 1.35368L1.70711 3.50012L7.5 3.50012C7.77614 3.50012 8 3.72398 8 4.00012Z' fill='black'/%3E%3C/svg%3E");
+    background-position: 50% 50%;
+    background-size: 1.6rem 1.6rem;
+    background-repeat: no-repeat;
+  }
+
+  .btn-alram {
+    width: 5.2rem;
+    height: 5.2rem;
+    background-image: url("data:image/svg+xml,%3Csvg width='17' height='16' viewBox='0 0 17 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.25 16C9.35457 16 10.25 15.1046 10.25 14H6.25C6.25 15.1046 7.14543 16 8.25 16Z' fill='black'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.25 1.91825L7.45281 2.07925C5.62552 2.44829 4.25002 4.06463 4.25002 6C4.25002 6.62782 4.11566 8.19725 3.79116 9.74216C3.63006 10.5091 3.41454 11.3076 3.12809 12H13.3719C13.0855 11.3076 12.87 10.5091 12.7089 9.74216C12.3844 8.19724 12.25 6.62782 12.25 6C12.25 4.06462 10.8745 2.44827 9.0472 2.07924L8.25 1.91825ZM14.4693 12C14.6926 12.4474 14.9515 12.801 15.25 13H1.25C1.54853 12.801 1.80745 12.4474 2.0307 12C2.92922 10.1994 3.25002 6.87916 3.25002 6C3.25002 3.57934 4.9702 1.56045 7.25484 1.09904C7.25164 1.06646 7.25 1.03342 7.25 1C7.25 0.447715 7.69772 0 8.25 0C8.80228 0 9.25 0.447715 9.25 1C9.25 1.03342 9.24836 1.06646 9.24516 1.09903C11.5298 1.56042 13.25 3.57932 13.25 6C13.25 6.87916 13.5708 10.1994 14.4693 12Z' fill='black'/%3E%3C/svg%3E");
+    background-position: 50% 50%;
+    background-size: 2.0rem 2.0rem;
+    background-repeat: no-repeat;
+  }
+
+  h1 {
+    flex: 1 1 auto;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    padding: 0 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+

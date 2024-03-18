@@ -1,0 +1,72 @@
+//버튼
+.ui-btn {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  background-color: #f3f7ff;
+  vertical-align: middle;
+  &:not(.not) {
+    display: inline-flex;
+    height: 3.6rem; 
+    line-height: inherit;
+    padding: 0 1.2rem;
+    border: 0 solid transparent;
+    text-align: center;
+    font-size: inherit;
+    text-decoration: none;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    opacity: 1;
+    transition: 0.3s, visibility 0s, margin 0s, width 0s;
+    appearance: none;
+  }
+  &.primary {
+    background-color: #FFD633;
+  }
+  &.sxs {
+    height: 2.0rem;
+    font-size: 1.2rem;
+  }
+  &.ss {
+    height: 2.8rem;
+    font-size: 1.4rem;
+  }
+  &.sl {
+    height: 4.4rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+  &.sxl {
+    height: 5.2rem;
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+}
+
+.btn-click-in {
+  display: block;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 100%;
+  transform: scale(0);
+  animation: btnClickEf 0.65s linear;
+  &.white {
+    background: rgba(255, 255, 255, 0.2);
+  }
+}
+@keyframes btnClickEf {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+.btn-clicking-active {
+  overflow: hidden
+}
